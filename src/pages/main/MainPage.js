@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import Box from "../../components/clubBooth/Box";
 
-const MainPage = () => {
-    return (
-        <div>
-            <p>메인</p>
-        </div>
-    );
-};
+function MainPage() {
+  return (
+    <div>
+      <p>메인</p>
+      <Box/>
+    </div>
+  );
+}
 
 export default MainPage;
