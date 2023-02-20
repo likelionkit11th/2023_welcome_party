@@ -1,0 +1,28 @@
+.main_container, .main_text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* carousel 이미지 관련 */
+#carousel_img1, #carousel_img2 {
+    margin: 0 auto;
+    margin-bottom: 10%;
+    position: relative;
+    z-index: 0;
+}
+
+/* 메인 페이지 문구 */
+.main_text {
+    text-align: center;
+}
+
+.main_text_en {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.main_text_ko {
+    text-align: center;
+    font-size: 4vw;
+}

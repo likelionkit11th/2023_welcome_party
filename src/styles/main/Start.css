@@ -1,0 +1,19 @@
+/* Let's start 버튼 */
+.start_btn_container {
+    margin-top: 10%;
+}
+
+.start_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 8vh;
+    background-color: #000000;
+    border-radius: 4vw;
+}
+
+.start_btn_text {
+    font-size: 4.5vw;
+    color: #ffffff;
+}
