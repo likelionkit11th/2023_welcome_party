@@ -1,0 +1,18 @@
+.alert-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .alert-box span {
+    font-size: 2vw;
+  }
+  
+  #alert_likelionkit_logo {
+    width: 25vw;
+  }
