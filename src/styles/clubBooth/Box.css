@@ -1,0 +1,13 @@
+.clickBoxDiv {
+  width: 95vw;
+  height: 65vh;
+  margin: 10% auto;
+  top: 0px;
+  position: sticky;
+  z-index: -1;
+}
+#schoolImg {
+  width: 100%;
+  height: 65vh;
+  border-radius: 20px;
+}
