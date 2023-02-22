@@ -1,0 +1,53 @@
+.schedule_list_container {
+    margin-top: 20%;
+}
+
+.schedule_list_box {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.today_schedule {
+    margin-bottom: 7%;
+}
+
+.today_schedule_text {
+    font-weight: bold;
+    font-size: 6vw;
+}
+
+.schedule_list_none {
+    display: none;
+}
+
+.schedule_list_card {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    background-color: #f4f4f4;
+    border-radius: 27px;
+}
+
+.card_content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sl_location {
+    margin: 2% 0 2% 0;
+}
+
+.schedule_name {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.sl_location {
+    font-size: 4vw;
+    color: #8c8c8c;
+}
+
+.sl_time {
+    font-size: 4vw;
+    font-weight: bold;
+}

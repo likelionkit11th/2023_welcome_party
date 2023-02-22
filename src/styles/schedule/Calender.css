@@ -1,0 +1,53 @@
+.schedule_calendar_w, .schedule_calendar_t {
+    height: 35vh;
+    background-color: #f4f4f4;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+}
+
+.schedule_calendar_none {
+    display: none;
+}
+
+.month_box {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.schedule_calendar_day {
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+.schedule_calendar_date {
+    font-size: 4.5vw;
+}
+
+.day_box, .date_box {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.weekday, .weekday_on, .weekend_sat, .weekend_sun {
+    width: 7%;
+    text-align: center;
+}
+
+.weekend_sun {
+    color: #FF0000;
+}
+
+.weekend_sat {
+    color: #4B89DC;
+}
+
+.weekday_on {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
