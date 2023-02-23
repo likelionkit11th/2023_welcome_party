@@ -3,8 +3,11 @@ import '../../styles/visitLog/VisitLog.css'
 import Log from '../../components/visitLog/log'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import MenuBar from '../../components/menuBar/MenuBar';
+import SummitModal from '../../components/visitLog/SummitModal';
 
 const VisitLog = () => {
+	const [open, setOpen] = useState(false);
 
 	return (
     <div className='visitLog_page_container'>
@@ -16,6 +19,8 @@ const VisitLog = () => {
 			</div>
 		</div>
 		<Log/>
+		<SummitModal open={open} setOpen={setOpen} />
+		<MenuBar open={open} setOpen={setOpen}  />
   </div>
 	);
 };
