@@ -1,0 +1,11 @@
+.visitLog_page_header{
+    padding : 5vh 3vw;
+    font-weight: 600;
+}
+.visitLog_page_header h1{
+    font-weight: bolder;
+}
+.visitLog_page_container {
+    height: 100vh;
+    margin : 0 auto;
+}
