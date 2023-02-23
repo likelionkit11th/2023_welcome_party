@@ -1,0 +1,41 @@
+.log_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    margin-left : 5vw;
+}
+.log_time{
+    display : flex;
+    align-items: center;
+    width : 25%;
+    padding-right : 2vw;
+    text-align: right;
+    font-weight: bold;
+}
+.log_commentLine{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.log_timeCircle{
+    border : 1vw solid black;
+    width : 3vw;
+    height : 3vw;
+    border-radius: 50%;
+}
+.log_comment{
+    width : 85%;
+    border-radius: 5vw;
+    padding : 3vh 5vw;
+    background-color: #F1F0FF;
+    font-weight: bolder;
+}
+.log_line{
+    width : 4%;
+    border : 1.5px solid black;
+    opacity: 1;
+}
+#end{
+    width : 2%;
+}
