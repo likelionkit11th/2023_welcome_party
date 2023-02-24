@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const Slide = ({setBtnBool,btnBool}) => {
     const [slideState,setSlideState] = useState({y:-100});
-    const [clubData,setClubData] = useState({});
+    const [clubData,setClubData] = useState([]);
 
     const clickBtn = ()=>{
         setBtnBool(!btnBool);
@@ -14,9 +14,8 @@ const Slide = ({setBtnBool,btnBool}) => {
     };
 
     useEffect(()=>{
-        axios.get('http://127.0.0.1:8000/booth')
+        axios.get('https://port-0-nodeservertest-r8xoo2mleif97lj.sel3.cloudtype.app/booth')
         .then((res) => {
-            console.log(res.data);
             setClubData(res.data);
         })
         .catch((err) => {
@@ -33,7 +32,12 @@ const Slide = ({setBtnBool,btnBool}) => {
                 <h2 id='clubBigTitle'><b>동아리</b></h2>
                 <hr />
             </section>
-            <DetailBox clubData={clubData}/>
+            {
+                clubData.map((ele, i)=>{
+                    return <DetailBox key={i} title={ele.name} category={ele.category} location={ele.location} img={ele.img} introduction={ele.introduction}/>
+                })
+            }
+            
         </motion.div>
     );
 };
