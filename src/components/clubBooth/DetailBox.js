@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import pointer from '../../assets/pointer.png';
 import map from '../../assets/map.png';
 
-function DetailBox(props) {
+function DetailBox(clubData) {
     const [close, setClose] = useState(false);
     const imgRef = useRef();
 
@@ -32,7 +32,7 @@ function DetailBox(props) {
                     <div className=''></div>
                 </div>
                 <div className='right'>
-                    <button className={`${close ? 'close': 'open'}`} onClick={click}>➕</button>
+                <button className={`${close ? 'close': 'open'}`} onClick={click}>{close ? '닫기':'위치 열기'}</button>
                 </div>
             </div>
             <div className='imgBox' ref={imgRef} style={{maxHeight:'0'}}>
