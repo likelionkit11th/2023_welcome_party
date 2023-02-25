@@ -1,17 +1,17 @@
 import React from 'react';
 import '../../styles/schedule/Calender.css'
 
-const Calender = ({active, onActive}) => {
+const Calender = ({active, setActive}) => {
 
     const onEight = () => {
         if (active === false) {
-            onActive(!active);
+            setActive(!active);
         }
     }
 
     const onNine = () => {
         if (active === true) {
-            onActive(!active);
+            setActive(!active);
         }
     }
 
@@ -33,13 +33,13 @@ const Calender = ({active, onActive}) => {
                     <span className='weekend_sat'>S</span>
                 </div>
                 <div className='date_box'>
-                    <span className='weekend_sun'>5</span>
-                    <span className='weekday'>6</span>
-                    <span className='weekday'>7</span>
+                    <span className='weekend_sun'></span>
+                    <span className='weekday'></span>
+                    <span className='weekday'></span>
                     <span className={(active) ? 'weekday_on' : 'weekday'} onClick={onEight}>8</span>
                     <span className={(active) ? 'weekday' : 'weekday_on'} onClick={onNine}>9</span>
-                    <span className='weekday'>10</span>
-                    <span className='weekend_sat'>11</span>
+                    <span className='weekday'></span>
+                    <span className='weekend_sat'></span>
                 </div>
             </div>
 
@@ -59,13 +59,13 @@ const Calender = ({active, onActive}) => {
                     <span className='weekend_sat'>S</span>
                 </div>
                 <div className='date_box'>
-                    <span className='weekend_sun'>5</span>
-                    <span className='weekday'>6</span>
-                    <span className='weekday'>7</span>
+                    <span className='weekend_sun'></span>
+                    <span className='weekday'></span>
+                    <span className='weekday'></span>
                     <span className={(active) ? 'weekday_on' : 'weekday'} onClick={onEight}>8</span>
                     <span className={(active) ? 'weekday' : 'weekday_on'} onClick={onNine}>9</span>
-                    <span className='weekday'>10</span>
-                    <span className='weekend_sat'>11</span>
+                    <span className='weekday'></span>
+                    <span className='weekend_sat'></span>
                 </div>
             </div>
         </section>
