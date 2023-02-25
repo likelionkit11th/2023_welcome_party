@@ -4,6 +4,7 @@ import ScheduleList from '../../components/schedule/ScheduleList';
 import '../../styles/schedule/Schedule.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MenuBar from '../../components/MenuBar';
 
 const Schedule = () => {
 
@@ -11,14 +12,16 @@ const Schedule = () => {
         AOS.init({duration : 1000});
       })
 
-
-    const [active, onActive] = useState(true);
+    const [active, setActive] = useState(true);
 
     return (
-        <section data-aos="fade-up" data-aos-duration="1500">
-            <Calender active={active} onActive={onActive} />
-            <ScheduleList active={active} />
-        </section>
+        <>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <Calender active={active} setActive={setActive} />
+                <ScheduleList active={active} />
+            </div>
+            <MenuBar />
+        </>
     );
 };
 

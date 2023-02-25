@@ -13,7 +13,7 @@ const MenuModal = () => {
                 </Link>
                 <Link className="modalBox" to="/schedule">
                     <div className="page">
-                        강연
+                        오늘의 일정
                     </div>
                 </Link>
                 <Link className="modalBox" to="/visitlog">

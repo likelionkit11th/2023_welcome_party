@@ -1,0 +1,31 @@
+.footer_container {
+    width: 100vw;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu_none {
+    display: none;
+}
+
+.menu_modal_none {
+    display: none;
+}
+
+.menu_left, .menu_center, .menu_right {
+    width: 33%;
+    text-align: center;
+}
