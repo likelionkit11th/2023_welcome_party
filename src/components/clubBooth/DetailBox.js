@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react';
 import  '../../styles/clubBooth/DetailBox.css';
 // import logo from '../../assets/logo.png';
 import pointer from '../../assets/pointer.png';
-import map from '../../assets/map.png';
+import map from '../../assets/map2.png';
 
 function DetailBox({title, category, location, img, introduction}) {
     const [close, setClose] = useState(false);
@@ -24,7 +24,7 @@ function DetailBox({title, category, location, img, introduction}) {
         <div className='border'>
             <div className='title'>
                 <div className='left'>
-                    {title}
+                    <span className='titlement'>{title}</span>
                     <img src={pointer} alt='logo' className='img-pointer'/>
                     <span className='location'>{location}</span>
                     <div className='introduction'>{category}</div>

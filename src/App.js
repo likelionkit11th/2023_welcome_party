@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Alert from './components/main/Alert';
@@ -7,7 +7,17 @@ import MainPage from './pages/main/MainPage';
 import Schedule from './pages/schedule/Schedule';
 import VisitLog from './pages/visitLog/VisitLog';
 
+
 function App() {
+
+  function setScreenSize() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+  useEffect(() => {
+    setScreenSize();
+  });
+
   return (
     <>
       <div className="App">

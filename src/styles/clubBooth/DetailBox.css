@@ -35,6 +35,9 @@
   font-size: 13px;
   color: #8f8c8c;
 }
+.titlement{
+  font-size: 18px;
+}
 .location {
   font-size: 18px;
   color: #8f8c8c;
@@ -47,7 +50,7 @@
 
 .open {
   color: #ff3d00;
-  font-size: 15px;
+  font-size: 12px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -59,7 +62,7 @@
 
 .close {
   color: #ff3d00;
-  font-size: 15px;
+  font-size: 12px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -76,6 +79,8 @@
   background-color: white;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .mapimg {
