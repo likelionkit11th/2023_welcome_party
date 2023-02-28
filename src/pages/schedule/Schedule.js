@@ -16,9 +16,9 @@ const Schedule = () => {
 
     return (
         <>
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div className='schedule_container'>
                 <Calender active={active} setActive={setActive} />
-                <ScheduleList active={active} />
+                <ScheduleList active={active} data-aos="fade-up" data-aos-duration="1500"/>
             </div>
             <MenuBar />
         </>
