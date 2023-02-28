@@ -1,5 +1,5 @@
 .schedule_list_container {
-    margin-top: 20%;
+    margin: 15% 0 30% 0;
 }
 
 .schedule_list_box {
@@ -26,6 +26,7 @@
     height: 20vh;
     background-color: #f4f4f4;
     border-radius: 27px;
+    margin-bottom: 8%;
 }
 
 .card_content {
@@ -38,7 +39,7 @@
 }
 
 .schedule_name {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: bold;
 }
 
