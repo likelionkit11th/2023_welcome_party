@@ -9,3 +9,10 @@
     height: 100vh;
     margin : 0 auto;
 }
+.vistLog_page_summit{
+    position : fixed;
+    bottom : 0;
+}
+.vistLog_page_Log{    
+    padding-bottom: 8vh;
+}

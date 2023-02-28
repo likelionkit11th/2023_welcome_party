@@ -8,6 +8,23 @@ import SummitModal from '../../components/visitLog/SummitModal';
 
 const VisitLog = () => {
 	const [open, setOpen] = useState(false);
+	const [logData,setLogData] = useState([]);
+
+	// 통신 테스트 코드 이후 수정
+	const axiosLog = () => {
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+            .then((res) => {
+                // console.log(res.data);
+                setLogData(res.data);
+            })
+            .catch((err) => {
+                // console.log(err);
+            })
+    }
+
+    useEffect(() => {
+        axiosLog();
+    }, []);
 
 	return (
     <div className='visitLog_page_container'>
@@ -16,12 +33,20 @@ const VisitLog = () => {
 				<div>
 					오늘의 소감과 함계 방명록을 작성해 주세요.<br/>
 					심한 욕설이 포함된 비난글은 삭제 조치 될 수 있습니다.
+				</div>
+			</div>
+			<div className='vistLog_page_Log'>
+				{logData.map((e,i)=>{
+						return(
+							<Log key ={i} logNum = {i} logTime = {e.id} comment = {e.body}/>
+						)
+					})}
+			</div>
+			<div className='vistLog_page_summit'>
+				<SummitModal open={open} setOpen={setOpen} />
+				<MenuBar open={open} setOpen={setOpen}  />
 			</div>
 		</div>
-		<Log/>
-		<SummitModal open={open} setOpen={setOpen} />
-		<MenuBar open={open} setOpen={setOpen}  />
-  </div>
 	);
 };
 
