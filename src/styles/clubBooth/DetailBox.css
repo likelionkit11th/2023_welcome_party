@@ -2,7 +2,7 @@
   width: 20.938rem;
   background-color: #f4f4f4;
   border-radius: 27px;
-  margin: 3% auto;
+  margin: 7% auto;
   padding: 10px 10px 0 10px;
 }
 .title {
@@ -21,11 +21,12 @@
 }
 .img {
   width: 100%;
-  max-height:80px;
+  max-height: 80px;
 }
 .img-pointer {
   width: 11px;
   margin-left: 10px;
+  margin-bottom: 2%;
 }
 .left {
   font-size: 20px;
@@ -35,7 +36,7 @@
   font-size: 13px;
   color: #8f8c8c;
 }
-.titlement{
+.titlement {
   font-size: 18px;
 }
 .location {

@@ -26,7 +26,7 @@ function DetailBox({title, category, location, img, introduction}) {
                 <div className='left'>
                     <span className='titlement'>{title}</span>
                     <img src={pointer} alt='logo' className='img-pointer'/>
-                    <span className='location'>{location}</span>
+                    <span className='location'>&nbsp;{location}</span>
                     <div className='introduction'>{category}</div>
                     <div className=''></div>
                 </div>
