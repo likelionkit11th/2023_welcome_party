@@ -13,7 +13,7 @@ const VisitLog = () => {
 	const axiosLog = () => {
         axios.get('http://43.200.55.207:8000/guestbook/')
             .then((res) => {
-                // console.log(res.data);
+                console.log(res.data);
                 setLogData(res.data);
             })
             .catch((err) => {
@@ -38,7 +38,6 @@ const VisitLog = () => {
 				{logData.map((e,i)=>{
 						return(
 							<Log key ={i} logNum = {i} logTime = {e.create_date} comment = {e.comment}/>
-							// <Log key ={i} logNum = {i} logTime = {e.id} comment = {e.body}/>
 						)
 					})}
 			</div>
