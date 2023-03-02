@@ -13,7 +13,6 @@ const VisitLog = () => {
 	const axiosLog = () => {
         axios.get('http://43.200.55.207:8000/guestbook/')
             .then((res) => {
-                console.log(res.data);
                 setLogData(res.data);
             })
             .catch((err) => {

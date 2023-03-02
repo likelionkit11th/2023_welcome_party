@@ -14,7 +14,7 @@ const Slide = ({setBtnBool,btnBool}) => {
     };
 
     useEffect(()=>{
-        axios.get('https://port-0-nodeservertest-r8xoo2mleif97lj.sel3.cloudtype.app/booth')
+        axios.get('http://43.200.55.207:8000/booth/')
         .then((res) => {
             setClubData(res.data);
         })
@@ -34,7 +34,7 @@ const Slide = ({setBtnBool,btnBool}) => {
             </section>
             {
                 clubData.map((ele, i)=>{
-                    return <DetailBox key={i} title={ele.name} category={ele.category} location={ele.location} img={ele.img} introduction={ele.introduction}/>
+                    return <DetailBox key={i} title={ele.booth_name} category={ele.club_category} location={ele.booth_location} img={ele.club_picture} introduction={ele.introduction}/>
                 })
             }
             
