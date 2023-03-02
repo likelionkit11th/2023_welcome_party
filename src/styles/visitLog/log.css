@@ -3,20 +3,22 @@
     align-items: center;
     margin-bottom: 2vh;
     margin-left : 5vw;
+    /* border : 2px solid blue; */
 }
 .log_time{
     display : flex;
     align-items: center;
-    width : 25%;
     padding-right : 2vw;
     text-align: right;
     font-weight: bold;
+    /* border : 2px solid red; */
 }
 .log_commentLine{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    /* border : 2px solid cyan; */
 }
 .log_timeCircle{
     border : 1vw solid black;
@@ -25,16 +27,16 @@
     border-radius: 50%;
 }
 .log_comment{
-    width : 85%;
+    width : 80%;
     border-radius: 5vw;
     padding : 3vh 5vw;
     font-weight: bolder;
 }
 .log_line{
-    width : 4%;
+    width : 8%;
     border : 1.5px solid black;
     opacity: 1;
 }
 #end{
-    width : 2%;
+    width : 4%;
 }
