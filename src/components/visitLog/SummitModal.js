@@ -16,8 +16,7 @@ const SummitModal = ({open, setOpen}) => {
   const onSummit = async (e) => {
     try {
       const res = await axios.post(
-        "http://43.200.55.207:8000/guestbook",
-        // "https://jsonplaceholder.typicode.com/posts", axios 테스트 코드
+        "http://43.200.55.207:8000/guestbook/",
         {
           headers: {
             "Content-Type": "application/json",
