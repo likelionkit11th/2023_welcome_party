@@ -1,9 +1,14 @@
 .visitLog_page_header{
     padding : 5vh 3vw;
     font-weight: 600;
+    width : 90%;
+    margin : 0 auto;
 }
 .visitLog_page_header h1{
     font-weight: bolder;
+}
+.visitLog_page_header div{
+    font-size: 3.5vw;
 }
 .visitLog_page_container {
     height: 100vh;
@@ -15,4 +20,5 @@
 }
 .vistLog_page_Log{    
     padding-bottom: 8vh;
+    /* border : 2px solid pink; */
 }

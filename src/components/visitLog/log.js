@@ -4,6 +4,7 @@ import '../../styles/visitLog/log.css'
 const log = ({logNum,logTime,comment}) => {
 
 	let commentColor;
+	let create_date = logTime.substr(0,16).replaceAll("-",".").replace("T"," ") + "PM";
 
 	switch (logNum % 3) {
 		case 0:
@@ -20,10 +21,11 @@ const log = ({logNum,logTime,comment}) => {
 			break;
 	}
 
-  return (
+	return (
 		<div className='log_container'>
 			<div className='log_time'>
-				{logTime}
+				{/* 2023.03.02 17:00PM */}
+				{create_date}
 			</div>
 			<div className='log_commentLine'>
 				<div className='log_timeCircle'>ㅤ</div>
@@ -34,7 +36,7 @@ const log = ({logNum,logTime,comment}) => {
 				<hr className='log_line' id='end'/>
 			</div>
 		</div>
-  );
+	);
 };
 
 export default log;

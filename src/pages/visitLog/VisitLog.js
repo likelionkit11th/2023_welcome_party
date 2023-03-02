@@ -10,9 +10,8 @@ const VisitLog = () => {
 	const [open, setOpen] = useState(false);
 	const [logData,setLogData] = useState([]);
 
-	// 통신 테스트 코드 이후 수정
 	const axiosLog = () => {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('http://43.200.55.207:8000/guestbook/')
             .then((res) => {
                 // console.log(res.data);
                 setLogData(res.data);
@@ -38,7 +37,8 @@ const VisitLog = () => {
 			<div className='vistLog_page_Log'>
 				{logData.map((e,i)=>{
 						return(
-							<Log key ={i} logNum = {i} logTime = {e.id} comment = {e.body}/>
+							<Log key ={i} logNum = {i} logTime = {e.create_date} comment = {e.comment}/>
+							// <Log key ={i} logNum = {i} logTime = {e.id} comment = {e.body}/>
 						)
 					})}
 			</div>
