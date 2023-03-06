@@ -11,7 +11,7 @@ const MenuModal = () => {
                         동아리
                     </div>
                 </Link>
-                <Link className="modalBox" to="/schedule">
+                <Link className="modalBox_border" to="/schedule">
                     <div className="page">
                         오늘의 일정
                     </div>

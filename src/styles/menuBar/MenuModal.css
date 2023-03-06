@@ -17,17 +17,22 @@
   justify-content: space-evenly;
 }
 
-.modalBox {
+.modalBox, .modalBox_border {
   width: 100%;
-  height: 32%;
+  height: 100%;
   text-decoration: none;
+}
+
+.modalBox_border {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .page {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 99%;
+  width: 100%;
   height: 100%;
   font-size: 6.5vw;
   font-weight: bold;
