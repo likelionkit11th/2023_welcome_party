@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import MenuBar from '../../components/menuBar/MenuBar';
 import SummitModal from '../../components/visitLog/SummitModal';
+import banner from '../../assets/banner.png';
 
 const VisitLog = () => {
 	const [open, setOpen] = useState(false);
@@ -26,6 +27,7 @@ const VisitLog = () => {
 
 	return (
     <div className='visitLog_page_container'>
+			<a id="golink" href='https://lava-ambulance-a28.notion.site/9f46d93cd8fb48b685aeb2334cd52a1b'><img id='banner' src={banner} alt='banner'/></a>
 			<div className='visitLog_page_header'>
 				<h1>방명록</h1>
 				<div>

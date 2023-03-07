@@ -11,3 +11,12 @@
   height: 65vh;
   border-radius: 20px;
 }
+#banner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#golink{
+  cursor: pointer;
+}

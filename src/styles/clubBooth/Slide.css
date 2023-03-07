@@ -1,11 +1,10 @@
 #slideDiv {
-  width: 96vw;
+  width: 100vw;
   background-color: white;
   margin: 0 auto;
   padding: 0 0 10% 0;
   border-radius: 20px;
 }
-
 section > button {
   width: 100%;
   padding: 3%;
@@ -14,6 +13,8 @@ section > button {
 }
 #slideSection {
   display: flex;
+  width: 93%;
+  margin: 0 auto;
 }
 #slideSection hr {
   margin-left: 5vw;
