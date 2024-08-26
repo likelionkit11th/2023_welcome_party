@@ -26,8 +26,3 @@
 ![동아리](https://user-images.githubusercontent.com/102667851/220094231-53f6f3a9-936c-4c3d-8814-47be614b9e8f.png)
 - **스케줄 및 방명록 페이지** <br/>
 ![스케줄방명록](https://user-images.githubusercontent.com/102667851/220094235-95e3b659-8bca-406e-a629-e84f0cf0156a.png)
-
-## 프로젝트 진행 중 이슈
-
----
-## 관련 자료
